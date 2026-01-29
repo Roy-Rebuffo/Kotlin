@@ -1,3 +1,5 @@
+
+
 fun main() {
     print("Dime el primer nº: ")
     val n1:Float = readln().toFloat()

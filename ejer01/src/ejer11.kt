@@ -1,4 +1,4 @@
-fun alea(li:Int, ls:Int):Int{
+private fun alea(li:Int, ls:Int):Int{
     return (Math.random() * (ls-li + 1)).toInt()+li
 }
 fun rellenar(matriz: IntArray){
