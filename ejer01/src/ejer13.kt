@@ -1,4 +1,4 @@
-class Persona (var nombre: String, var edad: Int) {
+class Personaa (var nombre: String, var edad: Int) {
 
     init {
         if (edad < 0)
@@ -18,8 +18,8 @@ class Persona (var nombre: String, var edad: Int) {
 }
 
 fun main(parametro: Array<String>) {
-    var persona1 = Persona("Juan", -12)
-    persona1 = Persona("Pepe",12)
+    var persona1 = Personaa("Juan", -12)
+    persona1 = Personaa("Pepe",12)
     persona1.imprimir()
     persona1.esMayorEdad()
 }

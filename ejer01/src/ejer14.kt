@@ -8,6 +8,7 @@ private class Alumno constructor(var nombre:String, var nota: Int){
             println("La nota es Regular")
         }
     }
+    
 }
 
 fun main() {
