@@ -30,14 +30,14 @@ open class CCuentaCorriente(
     }
 
     override fun comisiones() {
-        val cobrables = (transacciones - transExentas).coerceAtLeast(0)
+        val cobrables = (transacciones - transExentas)
         saldo -= cobrables * importePorTrans
         transacciones = 0
     }
 
     override fun intereses() {
         val base = if (saldo <= 3000) saldo else 3000.0
-        val resto = (saldo - 3000).coerceAtLeast(0.0)
+        val resto = (saldo - 3000)
 
         val interesBase = base * 0.005 / 12
         val interesExtra = resto * obtenerTipoDeInteres() / 12

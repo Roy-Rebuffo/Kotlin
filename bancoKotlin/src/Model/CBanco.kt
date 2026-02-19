@@ -27,5 +27,6 @@ class CBanco {
             it.comisiones()
             it.intereses()
         }
+        println("Realizado el mantenimiento para ${clientes.size} clientes")
     }
 }
